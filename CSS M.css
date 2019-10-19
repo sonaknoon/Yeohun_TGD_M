@@ -1,0 +1,18 @@
+/* 길이 조절 댓글쓰기 버튼 (https://tgd.kr/31761153) */
+
+#comment-write-form #comment-write-button-area {
+flex-direction: row;
+display: flex;
+}
+
+.pull-left {
+margin-right: 3px;
+}
+
+#btnRereplyCancelBtn {
+margin-right: 3px;
+}
+
+#writeCommentBtn {
+flex: 1;
+}
