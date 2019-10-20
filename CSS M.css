@@ -4,7 +4,7 @@
 	--mainColor: #44577C;   /* 메인 컬러 */
 	--mainColor3: #D8DDE8; /* 공지 컬러 (현재 인기글은 다른 색상으로 조정됨) */
 	--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066720887144458/N_.png); /* 로고 임포트 */
-	--before: "늑대별 "; /* 접속자 수 앞 문구 */
+	--before: ""; /* 접속자 수 앞 문구 */
 	--after: "개";  /* 접속자 수 뒤 문구 */
 }
 
@@ -54,6 +54,7 @@ header > #header-search-bar #header-search-input {
 nav#nav>.nav-header {
     background: var(--mainColor);
 }
+
 /* 트게더 메뉴 배경색 */
 nav#nav {
     background: var(--bgColor);
@@ -80,9 +81,19 @@ header {
     background: var(--mainColor); /* 광고 뱃지 배경 색 */
 }
 
-/* 접속자 수 및 랭킹 색상 */
-#board-info #viewers-area,#board-info #score-area {
+/* 접속자 수 색상 */
+#board-info #viewers-area {
     color: rgba(68, 87, 124, 0.692); /* 접속자 수 글씨 색 */
+}
+
+/* 랭킹 삭제 */
+#board-info #score-area {
+    display: none;
+}
+
+/* 별 모양으로 변경 */
+.fa-user:before {
+    content: "\f005";
 }
 
 #board-info #viewers-area #viewers:before {
