@@ -104,15 +104,17 @@ header {
 flex-direction: row;
 display: flex;
 }
-
+    
 .pull-left {
 margin-right: 3px;
 }
-
+    
 #btnRereplyCancelBtn {
-margin-right: 3px;
+ margin-right: 3px;
 }
-
+    
 #writeCommentBtn {
 flex: 1;
 }
+    
+    
