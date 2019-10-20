@@ -85,7 +85,7 @@ header {
 }
 
 /* 랭킹 삭제 */
-#board-info #score-area {
+#board-info h1 #score-area {
     display: none;
 }
 
