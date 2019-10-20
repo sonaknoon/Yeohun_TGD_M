@@ -46,10 +46,26 @@ header > #header-search-bar #header-search-input {
 }
 
 /* 카테고리 색상 변경 */
-#article-list #article-list-category {
+#article-list #article-list-category>a {
     background: #fff;
-
 }
+
+/* 공지 숨기기 버튼 */
+#article-list #article-option-area>#article-option-area-toggle-btn {
+    background: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    border: 2px solid;
+    border-color: #44577c;
+    margin-top: -2px;
+}
+
+.fa-eye:before {
+    content: "\f06e";
+    color: #44577c;
+}
+
 
 /* 트게더 메뉴 색상 */
 nav#nav>.nav-header {
