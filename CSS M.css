@@ -27,6 +27,7 @@ header>#header-area>a>h1 {
 }
 
 #board-info {
+    background: var(--bgColor);
     border-top: 2px solid #44577C;
     border-bottom: 2px solid #44577C;
 }
@@ -40,8 +41,15 @@ header > #header-search-bar #header-search-input {
 #board-info>a.board-right-menu {
     border-left: none
     color: var(--bgColor)
+    padding: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
-    
+
+/* 카테고리 색상 변경 */
+#article-list #article-list-category {
+    background: #fff;
+
 /* 트게더 메뉴 색상 */
 nav#nav>.nav-header {
     background: var(--mainColor);
