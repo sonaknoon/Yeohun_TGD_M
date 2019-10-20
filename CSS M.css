@@ -50,6 +50,10 @@ header > #header-search-bar #header-search-input {
     background: #ffffff;
 }
 
+#article-list #article-list-category {
+    background: #ffffff;
+}
+
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area>#article-option-area-toggle-btn {
     background: #fff;
