@@ -8,6 +8,10 @@
 	--after: "개";  /* 접속자 수 뒤 문구 */
 }
 
+/* 폰트 적용 */
+* { 
+    font-family: 'Nanum Gothic', sans-serif;
+    }
 
 /* 배경 */
 body {
