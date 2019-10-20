@@ -39,11 +39,8 @@ header > #header-search-bar #header-search-input {
 
 /* 왼쪽 메뉴 구분선 삭제*/
 #board-info>a.board-right-menu {
-    border-left: none
-    color: var(--bgColor)
+    border-left: none;
     padding: 10px;
-    padding-left: 7px;
-    padding-right: 7px;
 }
 
 /* 카테고리 색상 변경 */
