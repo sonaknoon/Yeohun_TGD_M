@@ -19,21 +19,30 @@ header>#header-area>a>h1 {
     background: var(--logoURL) no-repeat;
     background-size: auto 32px;
     width: 128px;
+    background-position: center center;
 }
 
 /* 검색 창 */
 header > #header-search-bar #header-search-input {
     border: 2px solid var(--mainColor) /* 검색창 테두리 색 */
-    border-radius: 15px;
+}
+
+/* 트게더 메뉴 색상 */
+nav#nav>.nav-header {
+    background: var(--mainColor);
+}
+/* 트게더 메뉴 배경색 */
+nav#nav {
+    background: var(--bgColor);
 }
 
 /* 검색 버튼 */
 header>#header-area>#header-search-link {
-    color: #; /* 검색창 옆 돋보기 색 */
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
 }
 
 header > #header-search-bar #header-search-btn {
-    color: #; /* 검색창 옆 돋보기 색 */
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
 }
 
 /* 트게더 로고 배너 */
@@ -45,7 +54,7 @@ header {
 /* 상단 배너 광고 뱃지 */
 
 #header-top-notice strong.notice-badge {
-    background: var(--bgColor); /* 광고 뱃지 배경 색 */
+    background: var(--mainColor); /* 광고 뱃지 배경 색 */
 }
 
 /* 접속자 수 및 랭킹 색상 */
@@ -78,33 +87,9 @@ header {
     color: var(--mainColor); /* 댓글 수 색 */
 }
 
-/* 인기글 버튼 */
-#article-list-menu>.btn.best {
-    border-radius: 15px;
-}
-
-/* 설정 버튼 */
-#article-list-menu>.btn.cog {
-    border-radius: 15px;
-}
-
-
-
-/* 글 쓰기 버튼 */
-#article-list-menu>.btn.write {
-    border-radius: 15px;
-}
-
-/* 목록 버튼 */
-.btn {
-    border-radius: 15px;
-}
-
-.btn-group-sm>.btn, .btn-sm {
-    border-radius: 15px;
-}
-
-
+/* 삼선버튼 색상 */
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: #44577C;
 
 /* 게시글 추천 */
 .btn-outline-success {
