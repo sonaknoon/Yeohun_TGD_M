@@ -1,7 +1,7 @@
 /* 사용자 설정 부분 (모바일용) */
 :root {
 	--bgColor: #EAEFF7;   /* 배경 색 */
-	--mainColor: #44577C;   /* 메인 컬러 */
+	--mainColor: var(--maincolor);   /* 메인 컬러 */
 	--mainColor3: #D8DDE8; /* 공지 컬러 (현재 인기글은 다른 색상으로 조정됨) */
 	--logoURL: url(https://cdn.discordapp.com/attachments/610065145858621461/610066720887144458/N_.png); /* 로고 임포트 */
 	--before: "늑대별 "; /* 접속자 수 앞 문구 */
@@ -28,8 +28,8 @@ header>#header-area>a>h1 {
 
 #board-info {
     background: var(--bgColor);
-    border-top: 2px solid #44577C;
-    border-bottom: 2px solid #44577C;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
 /* 검색 창 */
@@ -43,6 +43,7 @@ header > #header-search-bar #header-search-input {
     padding: 12px;
     padding-left: 10px;
     padding-right: 10px;
+    color: var(--mainColor)
 }
 
 /* 카테고리 색상 변경 */
@@ -61,21 +62,21 @@ header > #header-search-bar #header-search-input {
     height: 36px;
     line-height: 34px;
     border-top: 2px solid;
-    border-color: #44577c;
+    border-color: var(--mainColor);
     margin-top: -2px;
     opacity: 1;
 }
 
 .fa-eye:before {
     content: "\25CF";
-    color: #44577c;
+    color: var(--mainColor);
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 
 }
 
 .fa-eye-slash:before {
     content: "\25CB";
-    color: #44577c;
+    color: var(--mainColor);
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 }
 
@@ -152,14 +153,69 @@ header {
 
 /* 삼선버튼 색상 */
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-    color: #44577C;
+    color: var(--mainColor);
 }
 
-/* 게시글 추천 */
-.btn-outline-success {
-    color: var(--mainColor); /* 추천 버튼 배경 색 */
-    border-color: var(--mainColor); /* 추천 버튼 테두리 색 */
+
+/* 버튼 */
+.btn {
+	color: #fff !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	border-radius: 0 !important;
+	transition: 0.2s;
 }
+
+.btn:hover,
+.btn:focus {
+	color: var(--mainColor) !important;
+	background-color: #fff !important;
+}
+
+/* 댓글 헤더 색상 변경 */
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply > .reply-header {
+    background: #fcfcfc;
+}
+
+/* 댓글 제목 색상 변경 */
+#article-reply-area > .header h5 {
+    color: var(--mainColor);
+}
+
+/* 댓글 에디터 색상 변경 */
+.fr-popup, .fr-toolbar.fr-top {
+    border-top: 3px solid var(--mainColor);
+}
+
+.fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
+    color: var(--mainColor);
+}
+
+
+/* 게시글 헤더 색상 변경 */
+#article-content-wrapper>.header {
+    background: #ffffff;
+    padding: 0.6em 0.8em;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--maincolor);
+}
+
+/* 게시글 헤더 작성자 여백 변경 */
+#article-info>h2>#article-info-writer {
+    margin-top: 5px;
+}
+
+#article-info {
+    padding: 0.8em;
+}
+
+#article-content-wrapper>.footer {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--maincolor);
+}
+
 
 /* 길이 조절 댓글쓰기 버튼 (https://tgd.kr/31761153) */
 #comment-write-form #comment-write-button-area {
