@@ -68,14 +68,12 @@ header > #header-search-bar #header-search-input {
 }
 
 .fa-eye:before {
-    content: "\25CF";
     color: var(--mainColor);
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 
 }
 
 .fa-eye-slash:before {
-    content: "\25CB";
     color: var(--mainColor);
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 }
@@ -140,6 +138,11 @@ header {
 #article-list>.article-list-row.notice {
     background-color: var(--mainColor3); /* 공지 배경 색 */
 }
+
+#article-list>.article-list-row.hot {
+    background-color: #E7EBF1 !important;
+}
+
 
 /* 글 추천 수 */
 #article-list>.article-list-row>.item>.list-header>span {
