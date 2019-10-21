@@ -201,9 +201,8 @@ header {
 #article-content-wrapper>.header {
     background: #ffffff;
     padding: 0.6em 0.8em;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-color: var(--maincolor);
+    border-top: 2px solid var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
 }
 
 /* 게시글 헤더 작성자 여백 변경 */
@@ -216,9 +215,8 @@ header {
 }
 
 #article-content-wrapper>.footer {
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    border-color: var(--maincolor);
+    border-top: 2px solid var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
 }
 
 
