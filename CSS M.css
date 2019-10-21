@@ -1,5 +1,4 @@
-/* 모바일은 코드 정리 안 해서 보기 불편할거임 */
-/* 그런데 어쩌나 귀찮아서 정리할 생각이 없는걸 ㅋㅋ */
+/* 코드 정리 중 (191021 / 95% 완료...) */
 
 /* 사용자 설정 부분 (모바일용) */
 :root {
@@ -14,19 +13,7 @@
 /* 모든 항목 focus시 아웃라인 제거 */
 *:focus { outline: none !important; }
 
-/* 백그라운드 별 애니메이션 */
-body {
- background: transparent;
- animation: snow 20s linear infinite;
- background-image: /* 백그라운드 애니메이션 소스 임포트 */
-  url('https://cdn.discordapp.com/attachments/610065145858621461/610066913372012574/Star1.png'), 
-  url("https://cdn.discordapp.com/attachments/610065145858621461/610066914752069642/star2.png");
- }
- 
-@keyframes snow {
-0% {background-position: 0px 0px, 0px 0px;}
-100% {background-position: 500px 1000px, 400px 400px;}
-}
+/********** 애니메이션 **********/
 
 /* 스트리머 하트 펌핑 애니메이션 */
 small.favo i.fa.fa-heart {
@@ -53,14 +40,14 @@ span.a-badge i.fa.fa-star {
 
 
 /* 폰트 적용 */
-* { 
-    font-family: 'Nanum Gothic', sans-serif;
-    }
+* { font-family: 'Nanum Gothic', sans-serif; }
 
 /* 배경 */
 body {
-    background: var(--bgColor);   /* 배경색 코드 입력 */
+    background: var(--bgColor);
 }
+
+/********** 헤더 부분 **********/
 
 /* 로고 */
 header>#header-area>a>h1 {
@@ -70,15 +57,46 @@ header>#header-area>a>h1 {
     background-position: center center;
 }
 
-#board-info {
-    background: var(--bgColor);
-    border-top: 2px solid var(--mainColor);
-    border-bottom: 2px solid var(--mainColor);
+/* 트게더 로고 배너 */
+header {
+    border-bottom: 4px solid var(--mainColor); /* 로고 배너 하단 구분선 색 */
+    background: var(--bgColor); /* 로고 배너 배경 색 */
 }
+
+/* 상단 전광판 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: var(--mainColor); /* 광고 뱃지 배경 색 */
+}
+
+/* 삼선버튼 색상 */
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: var(--mainColor);
+}
+
+/* 트게더 메뉴 (삼선메뉴) 색상 */
+nav#nav>.nav-header {
+    background: var(--mainColor);
+}
+
+/* 트게더 메뉴 (삼선메뉴) 배경색 */
+nav#nav {
+    background: var(--bgColor);
+}
+
+/********** 검색 **********/
 
 /* 검색 창 */
 header > #header-search-bar #header-search-input {
     border: 2px solid var(--mainColor) /* 검색창 테두리 색 */
+}
+
+/* 검색 버튼 */
+header>#header-area>#header-search-link {
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
+}
+
+header > #header-search-bar #header-search-btn {
+    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
 }
 
 /* 왼쪽 메뉴 구분선 삭제*/
@@ -89,6 +107,42 @@ header > #header-search-bar #header-search-input {
     padding-right: 10px;
     color: var(--mainColor)
 }
+
+/********** 제목 부분 *********/
+
+/* 배경 및 테두리 박스 설정 */
+#board-info {
+    background: var(--bgColor);
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
+}
+
+/* 접속자 수 색상 */
+#board-info #viewers-area {
+    color: rgba(68, 87, 124, 0.692); /* 접속자 수 글씨 색 */
+}
+
+/* 접속자 수 별 모양으로 변경 */
+.fa-user:before {
+    content: "\f005";
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--before);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--after);
+    cursor: text;
+}
+
+/* 랭킹 삭제 */
+#board-info h1 #score-area {
+    display: none;
+}
+
+/********** 카테고리 선택자 부근 **********/
 
 /* 카테고리 색상 변경 */
 #article-list #article-list-category>a {
@@ -119,7 +173,44 @@ header > #header-search-bar #header-search-input {
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 }
 
-/* 트게더 페이지 */
+/********** 게시글 목록 부분 **********/
+
+/* 공지 색상 */
+#article-list>.article-list-row.notice {
+    background-color: var(--mainColor3); /* 공지 배경 색 */
+}
+
+/* 인기글 색상 */
+#article-list>.article-list-row.hot {
+    background-color: #E7EBF1 !important;
+}
+
+/* 점프버튼 (위로가기/스크롤) */
+#movetotop img {
+	display:none
+}
+
+#movetotop {
+	display: inline-block;
+	opacity: 0.8;
+	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
+	width: 80px;
+    height: 80px;
+    margin: 1em 1em -1em 1em;
+    background-size: contain;
+}
+
+/* 글 추천 수 */
+#article-list>.article-list-row>.item>.list-header>span {
+    background-color: var(--mainColor); /* 글 추천 수 배경 색 */
+}
+
+/* 댓글 수 */
+#article-list>.article-list-row>.item>a.list-title>small.comment-count {
+    color: var(--mainColor); /* 댓글 수 색 */
+}
+
+/* 트게더 페이지 선택자 */
 .pagination>.active>a,
 .pagination>.active>a:focus,
 .pagination>.active>span,
@@ -146,136 +237,7 @@ header > #header-search-bar #header-search-input {
 	transition: 0.2s;
 }
 
-/* 트게더 메뉴 색상 */
-nav#nav>.nav-header {
-    background: var(--mainColor);
-}
-
-/* 트게더 메뉴 배경색 */
-nav#nav {
-    background: var(--bgColor);
-}
-
-/* 검색 버튼 */
-header>#header-area>#header-search-link {
-    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
-}
-
-header > #header-search-bar #header-search-btn {
-    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
-}
-
-/* 트게더 로고 배너 */
-header {
-    border-bottom: 4px solid var(--mainColor); /* 로고 배너 하단 구분선 색 */
-    background: var(--bgColor); /* 로고 배너 배경 색 */
-}
-
-/* 상단 배너 광고 뱃지 */
-#header-top-notice strong.notice-badge {
-    background: var(--mainColor); /* 광고 뱃지 배경 색 */
-}
-
-/* 접속자 수 색상 */
-#board-info #viewers-area {
-    color: rgba(68, 87, 124, 0.692); /* 접속자 수 글씨 색 */
-}
-
-/* 랭킹 삭제 */
-#board-info h1 #score-area {
-    display: none;
-}
-
-/* 별 모양으로 변경 */
-.fa-user:before {
-    content: "\f005";
-}
-
-#board-info #viewers-area #viewers:before {
-    content: var(--before);
-    cursor: text;
-}
-
-#board-info #viewers-area #viewers:after {
-    content: var(--after);
-    cursor: text;
-}
-
-/* 메인 배너 글 공지 */
-#article-list>.article-list-row.notice {
-    background-color: var(--mainColor3); /* 공지 배경 색 */
-}
-
-#article-list>.article-list-row.hot {
-    background-color: #E7EBF1 !important;
-}
-
-/* 점프버튼 (위로가기/스크롤) */
-#movetotop img {
-	display:none
-}
-
-#movetotop {
-	display: inline-block;
-	opacity: 0.8;
-	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
-	width: 80px;
-    height: 80px;
-    margin: 1em 1em -1em 1em;
-    background-size: contain;
-}
-
-
-/* 글 추천 수 */
-#article-list>.article-list-row>.item>.list-header>span {
-    background-color: var(--mainColor); /* 글 추천 수 배경 색 */
-}
-
-/* 댓글 수 */
-#article-list>.article-list-row>.item>a.list-title>small.comment-count {
-    color: var(--mainColor); /* 댓글 수 색 */
-}
-
-/* 삼선버튼 색상 */
-.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
-    color: var(--mainColor);
-}
-
-
-/* 버튼 */
-.btn {
-	color: #fff !important;
-	background-color: var(--mainColor) !important;
-	border-color: var(--mainColor) !important;
-	border-radius: 0 !important;
-	transition: 0.2s;
-}
-
-.btn:hover,
-.btn:focus {
-	color: var(--mainColor) !important;
-	background-color: #fff !important;
-}
-
-/* 댓글 헤더 색상 변경 */
-#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply > .reply-header {
-    background: #fcfcfc;
-}
-
-/* 댓글 제목 색상 변경 */
-#article-reply-area > .header h5 {
-    color: var(--mainColor);
-}
-
-/* 댓글 에디터 색상 변경 */
-.fr-popup, .fr-toolbar.fr-top {
-    border-top: 3px solid var(--mainColor);
-}
-
-.fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
-    color: var(--mainColor);
-}
-
+/********** 게시글(본문 부분) *********/
 
 /* 게시글 헤더 색상 변경 */
 #article-content-wrapper>.header {
@@ -299,8 +261,44 @@ header {
     border-bottom: 2px solid var(--mainColor);
 }
 
+/* 버튼 (댓글 버튼 포함) */
+.btn {
+	color: #fff !important;
+	background-color: var(--mainColor) !important;
+	border-color: var(--mainColor) !important;
+	border-radius: 0 !important;
+	transition: 0.2s;
+}
 
-/* 길이 조절 댓글쓰기 버튼 (https://tgd.kr/31761153) */
+.btn:hover,
+.btn:focus {
+	color: var(--mainColor) !important;
+	background-color: #fff !important;
+}
+
+
+/********* 댓글 부분 ********/
+
+/* 댓글 헤더 색상 변경 */
+#article-reply-area #reply-real-area .reply > .reply-header, #article-reply-area #reply-best-area .reply > .reply-header {
+    background: #fcfcfc;
+}
+
+/* 댓글 제목 색상 변경 */
+#article-reply-area > .header h5 {
+    color: var(--mainColor);
+}
+
+/* 댓글 에디터 색상 변경 */
+.fr-popup, .fr-toolbar.fr-top {
+    border-top: 3px solid var(--mainColor);
+}
+
+.fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
+    color: var(--mainColor);
+}
+
+/* 자동 조절 댓글 버튼 */
 #comment-write-form #comment-write-button-area {
 flex-direction: row;
 display: flex;
@@ -317,5 +315,3 @@ margin-right: 3px;
 #writeCommentBtn {
 flex: 1;
 }
-    
-    
