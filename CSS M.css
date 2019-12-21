@@ -300,18 +300,23 @@ header > #header-search-bar #header-search-btn {
 
 /* 자동 조절 댓글 작성 버튼 */
 #comment-write-form #comment-write-button-area {
-flex-direction: row;
-display: flex;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
 }
-    
+
+label.pull-left {
+    margin-bottom: 5px;
+}
+
 .pull-left {
-margin-right: 3px;
+    margin-right: calc(100% - 100px);
 }
-    
+
 #btnRereplyCancelBtn {
- margin-right: 3px;
+    margin-right: 3px;
 }
-    
+
 #writeCommentBtn {
-flex: 1;
+    flex: 1;
 }
