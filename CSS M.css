@@ -11,7 +11,9 @@
 }
 
 /* 모든 항목 focus시 아웃라인 제거 */
-*:focus { outline: none !important; }
+*:focus {
+    outline: none !important; 
+}
 
 /********** 애니메이션 **********/
 
@@ -155,14 +157,14 @@ header > #header-search-bar #header-search-btn {
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area>#article-option-area-toggle-btn {
-    background: rgba(255, 255, 255, 0); /* 배경 투명화 */
+    background: transparent; /* 배경 투명화 */
     width: 36px;
     height: 36px;
     line-height: 34px;
     border-top: 2px solid;
     border-color: var(--mainColor);
     margin-top: -2px;
-    opacity: 1; /* 이 옵션으로 투명도를 조절하면 아이콘까지 사라짐 이유는 모름 */
+    opacity: 1;
 }
 
 .fa-eye:before {
@@ -174,6 +176,27 @@ header > #header-search-bar #header-search-btn {
 }
 
 /********** 게시글 목록 부분 **********/
+
+/* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
+#article-list>.article-list-row.notice>.item>.list-title>small.comment-count,
+#article-list>.article-list-row.notice>.item>.list-title>.list-writer,
+#article-list>.article-list-row.notice>.item>.list-title>span.a-badge {
+    display: none;
+}
+
+/* 공지 텍스트 아이콘 대체 */
+#article-list>.article-list-row.notice>.item>.list-header>strong, 
+#article-list>.article-list-row.notice>.item>.list-header>b {
+	font-size: 0px;
+}
+
+#article-list>.article-list-row.notice>.item>.list-header>strong:after, 
+#article-list>.article-list-row.notice>.item>.list-header>b:after{
+	font-family: 'fontawesome';
+	font-size: 14px;
+	color: #485679;
+	content: '\f08d';
+}
 
 /* 공지 색상 */
 #article-list>.article-list-row.notice {
@@ -219,6 +242,7 @@ header > #header-search-bar #header-search-btn {
 	border-color: var(--mainColor);
 	transition: 0.2s;
 }
+
 .pagination>.active>a:hover,
 .pagination>.active>span:hover,
 .pagination>li>a:hover,
@@ -228,6 +252,7 @@ header > #header-search-bar #header-search-btn {
 	color: var(--mainColor);
 	transition: 0.2s;
 }
+
 .pagination>li>a,
 .pagination>li>a:focus,
 .pagination>li>span
@@ -329,6 +354,6 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
 
 /* 진은검 뱃지 투톤 커스텀 */
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(https://cdn.discordapp.com/attachments/610065145858621461/658939146206838814/2.png);
+    content: url(https://cdn.discordapp.com/attachments/659060387718758401/663730003329941515/5c7ffdffb8360c99.png);
     width: 18px;
 }
