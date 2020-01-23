@@ -111,7 +111,7 @@ nav#nav:after {
 	position: fixed;
 	width: 300px;
 	content: "모바일 흔게더 배너 영역 테스트";
-	background: #485679;
+	background: var(--mainColor);
 	color: #fff;
 	margin-top: 12px;
     padding: 6px 12px;
@@ -128,8 +128,8 @@ nav#nav:before {
 	height: 140px;
 	margin-top: 12px;
     padding: 6px 12px;
-    border-top: 2px solid #485679;
-    border-bottom: 2px solid #485679;
+    border-top: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 
 /********** 검색 **********/
@@ -222,6 +222,10 @@ header > #header-search-bar #header-search-btn {
     text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 }
 
+.fa-home:before {
+    color: var(--mainColor);
+}
+
 /********** 게시글 목록 부분 **********/
 
 /* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
@@ -241,7 +245,7 @@ header > #header-search-bar #header-search-btn {
 #article-list>.article-list-row.notice>.item>.list-header>b:after{
 	font-family: 'fontawesome';
 	font-size: 14px;
-	color: #485679;
+	color: var(--mainColor);
 	content: '\f08d';
 }
 
@@ -410,7 +414,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 프로필바 메뉴 버튼 */
 .fa-caret-down:before {
-    color: #485679;
+    color: var(--mainColor);
 }
 
 /* 작성시각 여백 조정 */
@@ -425,7 +429,7 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
 
 /* 검색창 되돌아가기 화살표 */
 .fa-arrow-left:before {
-    color: #485679;
+    color: var(--mainColor);
 }
 
 /* 하단 백그라운드 */
