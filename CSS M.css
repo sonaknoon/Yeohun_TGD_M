@@ -213,7 +213,7 @@ header > #header-search-bar #header-search-btn {
 	display:none
 }
 
-#movetotop { /* V.2버전 수정 : 위로가기 글자 삭제 (잘라서) */
+#movetotop { /* PC용 위로가기 글자 삭제 */
 	display: inline-block;
 	opacity: 0.8;
 	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
@@ -352,8 +352,8 @@ img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
     width: 18px;
 }
 
-/* 진은검 뱃지 투톤 커스텀 */
+/* 진은검 뱃지 커스텀 */
 img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(https://cdn.discordapp.com/attachments/659060387718758401/663730003329941515/5c7ffdffb8360c99.png);
+    content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
     width: 18px;
 }
