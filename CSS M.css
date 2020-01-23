@@ -433,13 +433,6 @@ footer {
     background: #eaeff7;
 }
 
-/* 하단 검색창 */
-#boardSearchForm .form-control {
-    border: 1px solid #485679;
-    margin-left: -2px;
-    width: 184px;
-}
-
 /* 드롭다운 메뉴 */
 .dropdown.open .dropdown-menu,
 .input-group-btn.open .dropdown-menu {
