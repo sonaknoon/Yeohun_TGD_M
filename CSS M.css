@@ -107,15 +107,14 @@ nav#nav {
 
 /* 트게더 메뉴 (햄버거 메뉴) 배너 */
 nav#nav:after {
+    content: "모바일 흔게더 배너 영역 테스트";
 	font-family: 'nanumgothic';
 	position: fixed;
 	width: 300px;
-	content: "모바일 흔게더 배너 영역 테스트";
 	background: var(--mainColor);
 	color: #fff;
 	margin-top: 12px;
     padding: 6px 12px;
-
 }
 
 nav#nav:before {
