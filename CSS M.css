@@ -61,6 +61,18 @@ nav#nav {
     100% {opacity: 100;}
 }
 
+/* 트게더 메뉴 (햄버거 메뉴) 아이콘 애니메이션 */
+#header-close-bar-link > i {
+	animation: rotate90 0.5s;
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+}
+
+@keyframes rotate90 {
+	0% {transform: rotate(0deg); }
+	100% {transform: rotate(90deg); }
+}
+
 /* 전체 폰트 적용 */
 * { font-family: 'Nanum Gothic', sans-serif; }
 
@@ -105,9 +117,9 @@ nav#nav {
     background: var(--bgColor);
 }
 
-/* 트게더 메뉴 (햄버거 메뉴) 배너 */
+/* 트게더 메뉴 (햄버거 메뉴) 알림 */
 nav#nav:after {
-    content: "모바일 흔게더 배너 영역 테스트";
+    content: "모바일 흔게더 알림";
 	font-family: 'nanumgothic';
 	position: fixed;
 	width: 300px;
@@ -118,16 +130,16 @@ nav#nav:after {
 }
 
 nav#nav:before {
+	white-space: pre;
+	line-height: 25px;
+	content: "새로워진 흔게더를 만나보세요.\a건의사항은 CSS 카테고리에 작성해주세요.";
 	top: 425px;
 	position: fixed;
-	content: "";
-	background: url(https://cdn.discordapp.com/attachments/659060204247318528/669860212215250944/fc3460066f80650d.png) no-repeat;
 	background-position: center center;
 	width: 300px;
-	height: 140px;
+	height: auto;
 	margin-top: 12px;
-    padding: 6px 12px;
-    border-top: 2px solid var(--mainColor);
+    padding: 5px 10px 12px 10px;
     border-bottom: 2px solid var(--mainColor);
 }
 
@@ -482,5 +494,5 @@ footer {
 .dropdown-menu .divider {
 	background-color: var(--mainColor);
 	height: 2px;
-	margin: 3px 0;
+    margin: 3px 0;
 }
