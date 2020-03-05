@@ -52,3 +52,7 @@
     display: contents;
     width: fit-content;
 }
+
+#board-info>h1 {
+    width: calc(fit-content + 10px);
+}
