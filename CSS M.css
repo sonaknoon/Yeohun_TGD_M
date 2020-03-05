@@ -49,10 +49,5 @@
     font-weight: normal;
     vertical-align: baseline;
     line-height: 18px;
-    display: contents;
-    width: fit-content;
-}
-
-#board-info>h1 {
-    width: calc(fit-content + 10px);
+    float: right
 }
