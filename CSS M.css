@@ -18,3 +18,12 @@
 #board-info h1 #score-area {
     display: none;
 }
+
+#board-info #viewers-area, #board-info #score-area {
+    font-size: 14px;
+    color: rgba(10,59,84,0.4);
+    font-weight: normal;
+    vertical-align: baseline;
+    line-height: 18px;
+    display: inline-block;
+}
