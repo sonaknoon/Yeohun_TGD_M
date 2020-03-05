@@ -1,4 +1,4 @@
-/* 코드 정리 언제 하지... */
+/* 코드 점검 중 */
 
 /* 사용자 설정 부분 (모바일용) */
 :root {
@@ -392,93 +392,4 @@ label.pull-left {
 
 #writeCommentBtn {
     flex: 1;
-}
-
-/* 스트리머 뱃지 최신화 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    content: url(https://cdn.discordapp.com/attachments/610065145858621461/658326998728572931/9484242334512b5d.png);
-    width: 18px;
-}
-
-/* 진은검 뱃지 커스텀 */
-img[src="https://static-cdn.jtvnw.net/chat-badges/mod.png"] {
-    content: url(https://cdn.discordapp.com/attachments/659060387718758401/666644717219348480/1.5.png);
-    width: 18px;
-}
-
-
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 모바일 트게더 간소화 작업 (미정리) ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
-/* 프로필바 메뉴 버튼 */
-.fa-caret-down:before {
-    color: var(--mainColor);
-}
-
-/* 작성시각 여백 조정 */
-#article-list>.article-list-row>.item>.list-time {
-    width: 50px;
-}
-
-/* 게시글 여백 조정 */
-#article-list>.article-list-row>.item>a.list-title {
-    padding: 6.5px 0;
-}
-
-/* 검색창 되돌아가기 화살표 */
-.fa-arrow-left:before {
-    color: var(--mainColor);
-}
-
-/* 하단 백그라운드 */
-footer {
-    background: #eaeff7;
-}
-
-/* 드롭다운 메뉴 */
-.dropdown.open .dropdown-menu,
-.input-group-btn.open .dropdown-menu {
-	opacity: unset;
-	transform: unset;
-	border: 2px solid var(--mainColor);
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.275);
-}
-
-.dropdown .dropdown-menu,
-.input-group-btn .dropdown-menu {
-	display: block !important;
-	opacity: 0;
-	transform: scale(0);
-	transform-origin: top;
-	transition: all 0.4s cubic-bezier(0.18, 1.5, 0, 1);
-	padding: 8px 0 3px 0px;
-}
-
-.dropdown-menu>li>a {
-	transition: 0.1s;
-}
-
-.dropdown-menu>li>a:hover {
-	background: transparent;
-	transform: scaleX(1.04);
-	transition: 0.1s;
-}
-
-#latestDropdownMenu>li>a>span.delrow,
-#favoriteDropdownMenu>li>a>span.delrow {
-	color: var(--mainColor);
-}
-
-#latestDropdownMenu>li>a>span.delrow:hover,
-#favoriteDropdownMenu>li>a>span.delrow:hover {
-	background: transparent;
-}
-
-#favoriteDropdownMenu>li>a>span.label.label-default {
-	background-color: var(--mainColor);
-}
-
-.dropdown-menu .divider {
-	background-color: var(--mainColor);
-	height: 2px;
-    margin: 3px 0;
 }
