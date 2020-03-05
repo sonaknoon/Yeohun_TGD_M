@@ -13,3 +13,8 @@
 
 /* 전체 폰트 적용 */
 * { font-family: 'Nanum Gothic', sans-serif; }
+
+/* 랭킹 표시 삭제 */
+#board-info h1 #score-area {
+    display: none;
+}
