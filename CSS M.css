@@ -1,4 +1,4 @@
-/* 코드 점검 중 #2 */
+/* 코드 점검 중 #1 */
 
 /* 사용자 설정 부분 (모바일용) */
 :root {
@@ -9,6 +9,59 @@
 	--before: "늑대별 "; /* 접속자 수 앞 문구 */
 	--after: "개";  /* 접속자 수 뒤 문구 */
 }
+
+
+/* 전체 폰트 적용 */
+* { font-family: 'Nanum Gothic', sans-serif; }
+
+/********** 헤더 부분 **********/
+
+/* 로고 */
+header>#header-area>a>h1 {
+    background: var(--logoURL) no-repeat;
+    background-size: auto 32px;
+    width: 128px;
+    background-position: center center;
+}
+
+/* 트게더 로고 배너 */
+header {
+    border-bottom: 4px solid var(--mainColor); /* 로고 배너 하단 구분선 색 */
+    background: var(--bgColor); /* 로고 배너 배경 색 */
+}
+
+/* 상단 전광판 뱃지 */
+#header-top-notice strong.notice-badge {
+    background: var(--mainColor); /* 광고 뱃지 배경 색 */
+}
+
+/* 삼선버튼 색상 */
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    color: var(--mainColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 색상 */
+nav#nav>.nav-header {
+    background: var(--mainColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 배경색 */
+nav#nav {
+    background: var(--bgColor);
+}
+
+/* 트게더 메뉴 (햄버거 메뉴) 알림 */
+nav#nav:after {
+    content: "새로운 흔게더를 경험해보세요!";
+	font-family: 'nanumgothic';
+	position: fixed;
+	width: 300px;
+	background: var(--mainColor);
+	color: #fff;
+	margin-top: 12px;
+    padding: 6px 12px;
+}
+
 
 /********** 제목 부분 *********/
 
