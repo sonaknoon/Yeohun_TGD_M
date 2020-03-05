@@ -10,10 +10,6 @@
 	--after: "개";  /* 접속자 수 뒤 문구 */
 }
 
-
-/* 전체 폰트 적용 */
-* { font-family: 'Nanum Gothic', sans-serif; }
-
 /* 랭킹 표시 삭제 */
 #board-info h1 #score-area {
     display: none;
@@ -43,11 +39,27 @@
     cursor: text;
 }
 
-#board-info #viewers-area, #board-info #score-area {
-    font-size: 14px;
-    color: rgba(10,59,84,0.4);
-    font-weight: normal;
-    vertical-align: baseline;
-    line-height: 18px;
-    float: right
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 400; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff');
+
+} 
+
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 700; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff');
+
+} 
+
+@font-face { 
+    font-family: 'NanumBarunGothic'; 
+    font-style: normal; 
+    font-weight: 300; 
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff');
 }
+
+* { font-family: 'NanumBarunGothic', sans-serif; }
