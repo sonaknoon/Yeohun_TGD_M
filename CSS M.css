@@ -50,4 +50,5 @@
     vertical-align: baseline;
     line-height: 18px;
     display: contents;
+    width: fit-content;
 }
