@@ -19,6 +19,30 @@
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+/* 접속자 수 별 모양으로 변경 */
+.fa-user:before {
+    content: "\f005";
+}
+
+#board-info #viewers-area #viewers:before {
+    content: var(--before);
+    cursor: text;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: var(--after);
+    cursor: text;
+}
+
 #board-info #viewers-area, #board-info #score-area {
     font-size: 14px;
     color: rgba(10,59,84,0.4);
