@@ -506,3 +506,26 @@ footer {
 	height: 2px;
     margin: 3px 0;
 }
+
+/* 점프버튼 수정 (위로가기/스크롤) */
+#movetotop img {
+	display:none
+}
+
+#movetotop {
+	display: inline-block;
+	background:#485679;
+	opacity: 1;
+	width: 100%;
+    height: 40px;
+    position: fixed; 
+    left: 50%;
+    bottom: 0;
+    margin: 0;
+    margin-left: -50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    background: url(https://cdn.discordapp.com/attachments/659060358019022868/685155800939102239/Untitled.png);
+    background-position: center center;
+}
