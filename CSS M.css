@@ -1,4 +1,4 @@
-/* 코드 점검 중 */
+/* 코드 점검 중 #1 */
 
 /* 사용자 설정 부분 (모바일용) */
 :root {
@@ -17,11 +17,6 @@
 
 /* 전체 폰트 적용 */
 * { font-family: 'Nanum Gothic', sans-serif; }
-
-/* 배경 */
-body {
-    background: var(--bgColor);
-}
 
 /********** 헤더 부분 **********/
 
@@ -71,30 +66,6 @@ nav#nav:after {
     padding: 6px 12px;
 }
 
-/********** 검색 **********/
-
-/* 검색 창 */
-header > #header-search-bar #header-search-input {
-    border: 2px solid var(--mainColor) /* 검색창 테두리 색 */
-}
-
-/* 검색 버튼 */
-header>#header-area>#header-search-link {
-    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
-}
-
-header > #header-search-bar #header-search-btn {
-    color: var(--mainColor); /* 검색창 옆 돋보기 색 */
-}
-
-/* 왼쪽 메뉴 구분선 삭제*/
-#board-info>a.board-right-menu {
-    border-left: none;
-    padding: 12px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--mainColor)
-}
 
 /********** 제목 부분 *********/
 
@@ -128,126 +99,4 @@ header > #header-search-bar #header-search-btn {
 /* 랭킹 표시 삭제 */
 #board-info h1 #score-area {
     display: none;
-}
-
-/********** 카테고리 선택자 부근 **********/
-
-/* 카테고리 배경 색상 변경 */
-#article-list #article-list-category>a {
-    background: #ffffff;
-}
-
-#article-list #article-list-category {
-    background: #ffffff;
-}
-
-/* 공지 숨기기 버튼 */
-#article-list #article-option-area>#article-option-area-toggle-btn {
-    background: transparent; /* 배경 투명화 */
-    width: 36px;
-    height: 36px;
-    line-height: 34px;
-    border-top: 2px solid;
-    border-color: var(--mainColor);
-    margin-top: -2px;
-    opacity: 1;
-}
-
-.fa-eye:before {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
-}
-
-.fa-eye-slash:before {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
-}
-
-.fa-home:before {
-    color: var(--mainColor);
-}
-
-/********** 게시글 목록 부분 **********/
-
-/* 공지글 댓글 수 · 작성자 · ⓘ 아이콘 삭제*/
-#article-list>.article-list-row.notice>.item>.list-title>small.comment-count,
-#article-list>.article-list-row.notice>.item>.list-title>.list-writer,
-#article-list>.article-list-row.notice>.item>.list-title>span.a-badge {
-    display: none;
-}
-
-/* 공지 텍스트 아이콘 대체 */
-#article-list>.article-list-row.notice>.item>.list-header>strong, 
-#article-list>.article-list-row.notice>.item>.list-header>b {
-	font-size: 0px;
-}
-
-#article-list>.article-list-row.notice>.item>.list-header>strong:after, 
-#article-list>.article-list-row.notice>.item>.list-header>b:after{
-	font-family: 'fontawesome';
-	font-size: 14px;
-	color: var(--mainColor);
-	content: '\f08d';
-}
-
-/* 공지 색상 */
-#article-list>.article-list-row.notice {
-    background-color: var(--mainColor3); /* 공지 배경 색 */
-}
-
-/* 인기글 색상 */
-#article-list>.article-list-row.hot {
-    background-color: #E7EBF1 !important;
-}
-
-/* 점프버튼 (위로가기/스크롤) */
-#movetotop img {
-	display:none
-}
-
-#movetotop { /* PC용 위로가기 글자 삭제 */
-	display: inline-block;
-	opacity: 0.8;
-	background:url(https://cdn.discordapp.com/attachments/610065145858621461/610066918648578058/9fed5b52b8584c5e.png);
-	width: 80px;
-    height: 80px;
-    margin: 1em 1em -1.5em 1em;
-    background-size: contain;
-}
-
-/* 글 추천 수 */
-#article-list>.article-list-row>.item>.list-header>span {
-    background-color: var(--mainColor); /* 글 추천 수 뱃지 배경 색 */
-}
-
-/* 댓글 수 */
-#article-list>.article-list-row>.item>a.list-title>small.comment-count {
-    color: var(--mainColor); /* 댓글 수 색 */
-}
-
-/* 트게더 페이지 선택자 */
-.pagination>.active>a,
-.pagination>.active>a:focus,
-.pagination>.active>span,
-.pagination>.active>span:focus {
-	background-color: var(--mainColor);
-	border-color: var(--mainColor);
-	transition: 0.2s;
-}
-
-.pagination>.active>a:hover,
-.pagination>.active>span:hover,
-.pagination>li>a:hover,
-.pagination>li>span:hover {
-	background-color: white;
-	border-color: var(--mainColor);
-	color: var(--mainColor);
-	transition: 0.2s;
-}
-
-.pagination>li>a,
-.pagination>li>a:focus,
-.pagination>li>span
-.pagination>li>span:focus {
-	color: var(--mainColor);
-	background: transparent;
-	transition: 0.2s;
 }
