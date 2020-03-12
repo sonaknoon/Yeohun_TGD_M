@@ -106,7 +106,7 @@ nav#nav {
 
 /* 트게더 메뉴 (햄버거 메뉴) 아이콘 애니메이션 */
 #header-close-bar-link > i {
-	animation: rotate90 0.5s;
+	animation: rotate90 0.3s;
 	animation-fill-mode: forwards;
 	animation-delay: 0.1s;
 }
