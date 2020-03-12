@@ -246,13 +246,12 @@ nav#nav:after {
 
 /* 공지 숨기기 버튼 */
 #article-list #article-option-area>#article-option-area-toggle-btn {
-    background: transparent; /* 배경 투명화 */
-    width: 36px;
-    height: 36px;
-    line-height: 34px;
-    border-top: 2px solid;
-    border-color: transparent;
-    margin-top: -2px;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    border-top: 2px solid transparent;
+    margin-top: 0px;
     opacity: 1;
 }
 
