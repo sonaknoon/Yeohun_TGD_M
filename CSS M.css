@@ -1,6 +1,6 @@
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 주석 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 업데이트 : 2020.03.12 완료 */
-/* 노트패드 : 03.13 Github 오류 해결 후 테스트 예정 */
+/* 노트패드 : 없음 */
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 모바일 CSS 기본 설정 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 :root {
@@ -253,14 +253,6 @@ nav#nav:after {
     border-top: 2px solid transparent;
     margin-top: 0px;
     opacity: 1;
-}
-
-.fa-eye:before {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
-}
-
-.fa-eye-slash:before {
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
 }
 
 .fa-home:before {
