@@ -33,6 +33,11 @@ footer {
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 폰트 Font font ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
+/* 부드러운 스크롤링 */
+html {
+	scroll-behavior: smooth;
+}
+
 /* 나눔바른고딕 */
 @font-face { 
     font-family: 'NanumBarunGothic'; 
